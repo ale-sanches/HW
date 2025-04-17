@@ -1,0 +1,20 @@
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.28);
+}
+.primary{
+    background-color: cornflowerblue;
+}
+.secondary {
+    background-color: rgba(148, 218, 238, 0.54);
+}
+.danger {
+    background-color: rgba(255, 0, 0, 0.54);
+}

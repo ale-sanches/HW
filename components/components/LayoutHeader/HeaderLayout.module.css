@@ -1,0 +1,17 @@
+.header {
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    max-height: 30px;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
