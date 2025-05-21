@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     max-height: 30px;
+    justify-content: space-between;
 }
 
 .leftSide {
@@ -14,4 +15,12 @@
 .logo {
     width: 40px;
     height: 40px;
+}
+.nav{
+    display: flex;
+    gap: 1rem;
+}
+.menuItem{
+    text-decoration: none;
+    color: black;
 }

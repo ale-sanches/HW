@@ -1,14 +1,27 @@
-import {defineComponent, h, resolveComponent, useSlots} from 'vue'
+import {defineComponent, computed} from 'vue'
 import styles from './default.module.css'
-import HeaderLayout from "~/components/LayoutHeader/HeaderLayout";
+import {Header} from '~/components/header'
+import {useRoute, useNuxtApp} from '#app'
 
 export default defineComponent({
     name: 'PageLayout',
     setup(props, {slots}) {
-
+        const currentPath = computed(() => useRoute().path)
+        const menuItems = computed(() => [{
+            text: 'Главная',
+            url: '/',
+            active: currentPath.value === '/',
+        },
+            {
+                text: 'Table',
+                url: '/table-page/table-page',
+                active: currentPath.value === '/table-page/table-page'
+            }])
         return () => (
             <div class={styles.layout}>
-                <HeaderLayout/>
+                <Header
+                    menuItems={menuItems.value}
+                />
                 {slots.default?.()}
             </div>
         )

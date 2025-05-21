@@ -1,0 +1,98 @@
+.cell {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.main_default {
+    background-color: #E3F4FF;
+}
+
+.main_default:hover {
+    background-color: #AFDDFB;
+}
+
+.main_accent {
+    background-color: #FFCD91;
+}
+
+.main_accent:hover {
+    background-color: #FFA841;
+}
+
+.main_info {
+    background-color: #E3D2FF;
+}
+
+.main_info:hover {
+    background-color: #BB91FF;
+}
+
+.main_party {
+    background-color: #FFD2D3;
+}
+
+.main_party:hover {
+    background-color: #FF91E5;
+}
+
+.secondary_default {
+    background-color: #F4F9FD;
+}
+
+.secondary_default:hover {
+    background-color: #DAE5EC;
+}
+
+.secondary_accent {
+    background-color: #E7FFF6;
+}
+
+.secondary_accent:hover {
+    background-color: #BAF8E0;
+}
+
+.secondary_info {
+    background-color: #BFD4FF;
+}
+
+.secondary_info:hover {
+    background-color: #7DA1FB;
+}
+
+.secondary_party {
+    background-color: #EEFFBF;
+}
+
+.secondary_party:hover {
+    background-color: #CAFF60;
+}
+
+.border_none {
+    border: none;
+}
+
+.border_right {
+    border-right: 1px solid #E0E0E0;
+}
+
+.border_left {
+    border-left: 1px solid #E0E0E0;
+}
+
+.border_bottom {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.border_all {
+    border: 1px solid #E0E0E0;
+}
+.border_default{
+    border-right: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+

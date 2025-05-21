@@ -1,13 +1,13 @@
 import {defineComponent} from 'vue'
 import styles from './index.module.css'
-import SideMenu from '~/components/MainPage/mainPage';
+import {MainContent} from '~/components/main-content'
 
 export default defineComponent({
     name: 'IndexPage',
     setup() {
         return () => (
             <div class={styles.page}>
-                <SideMenu/>
+                <MainContent/>
             </div>
         )
     }

@@ -1,21 +1,22 @@
 import {defineComponent} from "vue";
-import styles from './Button.module.css'
+import styles from './button.module.css'
 
 type Variant = 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
 
-export default defineComponent({
+export default defineComponent<{
+    variant?: Variant,
+    onClick?: ((payload: MouseEvent) => void);
+}>({
     name: ' UIButton',
     props: {
         variant: {
-            type: String,
-            default: 'primary',
-        },
-        onClick: Function as PropType<(e: MouseEvent) => void>
+            default: "primary",
+        }
     },
     setup(props, {slots}) {
         return () => (
             <button class={[
-                styles.button, styles[props.variant]
+                styles.button, styles[props.variant || 'primary']
             ]}
                     onClick={props.onClick}
             >

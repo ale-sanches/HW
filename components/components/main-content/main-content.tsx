@@ -1,9 +1,9 @@
 import {defineComponent} from "vue";
-import styles from './MainPage.module.css'
-import {UIButton} from "#components";
+import styles from './main-content.module.css'
+import {UIButton} from "../UI/Button"
 
 export default defineComponent({
-    name: 'SideMenu',
+    name: 'MainContent',
     setup() {
         //что это - хз
         const buttonsRef = ref<HTMLElement | null>(null);
@@ -13,6 +13,7 @@ export default defineComponent({
                 buttonsRef.value.classList.toggle(styles.replacedButtons);
             }
         };
+
         return () => (
             <div class={styles.page}>
                 <div ref={buttonsRef} class={styles.buttons}>
